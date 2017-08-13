@@ -1,0 +1,65 @@
+PDCViewer - CAN based PDC (park distance control) optical feedback
+==============================================================================
+
+Simple prove of concept to get PDC CAN signals from a car to show on LED
+bargraphs.
+
+
+Current Stage:
+==============
+
+At the first step the communication will be done via CAN - easy re-use of
+CAN2matrix project.
+
+How to get the Project
+======================
+
+git clone git@github.com:mkleemann/PDCViewer.git /path/to/clone/in
+cd /path/to/clone/in
+git submodule init
+git submodule update
+
+How to build the Project
+========================
+
+mkdir -p /path/to/build/in
+cd /path/to/build/in
+cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/clone/in/cmake/generic-gcc-avr.cmake /path/to/clone/in
+make
+
+Type 'make help' to get all possible targets. Documentation is not being
+built by the default target (all). It needs to be build seperately.
+Uploading the final hex file to the AVR also needs the 'upload_...'
+target being selected.
+
+Before uploading, setup the right values to the programmer and tools
+variables.
+
+Building in a Windows environment needs a little more care. You need
+to specify the generator for cmake too, since the default is Visual
+Studio. The command line would be:
+
+cmake -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=/path/to/clone/in/cmake/generic-gcc-avr.cmake /path/to/clone/in
+
+Of course, the same works in a Linux environment, if you don't mind the 
+extra typing. Additionally the make tool, e.g. from the Atmel Studio,
+needs to be in the 'PATH' environment. The next environment variable
+defined is 'AVR_FIND_ROOT_PATH'. This points to the include and library
+root directory of the AVR toolchain.
+
+Example:
+AVR_FIND_ROOT_PATH=d:/Program Files/Atmel/Atmel Studio 6.0/extensions/Atmel/AVRGCC/3.4.1.81/AVRToolchain/avr
+
+Next Steps/Ideas:
+=================
+(M)andatory
+(O)ptional
+(S)tarted Implementation
+(P)artly Implemented
+(T)esting and Optimizing
+(D)one
+
+- (T) show distance on one bargraph (common set)
+- (T) add communication channel for information to show; UART or CAN
+- (T) show distances independently
+

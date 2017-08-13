@@ -1,0 +1,36 @@
+/**
+ * \mainpage Introduction 
+ *
+ * \section Copyright
+ * - - -
+ * <b>"THE ANY BEVERAGE-WARE LICENSE"</b> (Revision 42 - based on beer-ware license):
+ *
+ * <dev@layer128.net> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a be(ve)er(age) in return. (I don't
+ * like beer much.)
+ *
+ * Matthias Kleemann
+ * - - -
+ *
+ * \section sec_about About the project
+ * Since the <a href="https://github.com/mkleemann/CAN2matrix">CAN2matrix</a> project
+ * was developed to replace the car's original radio unit, the display of the PDC (park
+ * distance control) was no longer available. To have a visual feedback again, the
+ * PDCViewer was created.
+ *
+ * At some point in time, both projects may merge. They currently reside right
+ * next to each other, sharing the same CAN bus and resources. This also might 
+ * save hardware and power consumption.
+ *
+ * As a standalone project, the possibilities are not limited to PDC. The bargraphs can
+ * show any value coming via CAN. It may also be positioned at a different location
+ * within the car, e.g. the rear, or even be used multiple times, e.g. for front and
+ * rear sensors.
+ *
+ * \section sec_schematics Schematics
+ * The simple schematics of the project. The power supply part is likely not the final
+ * one for an in-car environment.
+ *
+ * \image html "doc/schematics/PDCViewer.png" "Schematics of PDCViewer"
+ **/
