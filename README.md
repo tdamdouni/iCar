@@ -1,5 +1,6 @@
-# iCar
-Anzeige- &amp; Bedien-Konzepte im Fahrzeug &amp;&amp; C2C- &amp; C2X-Communication
+# iCar :: Automotive Engineering
+
+Anzeige- &amp; Bedien-Konzepte im Fahrzeug &amp;&amp; Fahrerassistenzsysteme &amp;&amp; C2C- &amp; C2X-Communication
 
 https://www.youtube.com/watch?v=MPUjqndcDK8
 
